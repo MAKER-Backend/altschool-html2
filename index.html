@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Assignment</title>
+  </head>
+  <body>
+    <header>
+      <nav aria-labelledby="primary-navigation">
+        <ol>
+          <li>
+            <a href="./Table/index.html">
+              <i class="fa-solid fa-circle-arrow-left"></i> Table</a
+            >
+          </li>
+          <li class="one">
+            <a href="#audio"> Audio </a>
+          </li>
+          <li>
+            <a href="#video"> Video </a>
+          </li>
+          <li>
+            <a href="#iframe"> iframe </a>
+          </li>
+          <li>
+            <a href="#embed"> Embed </a>
+          </li>
+          <li>
+            <a href="#source"> Source </a>
+          </li>
+          <li>
+            <a href="#track"> Track </a>
+          </li>
+          <li class="two">
+            <a href="#picture"> Picture element </a>
+          </li>
+        </ol>
+      </nav>
+    </header>
+    <main>
+      <section id="audio">
+        <h1>Audio</h1>
+        <audio
+          src="/Assets/music/Juls-Ft-Odeal-Hold-You-Down-(TrendyBeatz.com).mp3"
+          controls
+        ></audio>
+      </section>
+      <section id="video">
+        <h2>Video</h2>
+        <video
+          src="/Assets/video/vecteezy_a-beautiful-princess-smell-the-pink-flowers-in-the-garden_19784257.mp4"
+          controls
+          width="500"
+        ></video>
+      </section>
+      <section id="iframe">
+        <h1>Iframe</h1>
+        <iframe
+          src="https://www.youtube.com/embed/_SJ5GUvkMK4?si=VoaF5oTHRr1paLdf"
+          width="500"
+          height="300"
+          title="YouTube video player"
+        ></iframe>
+      </section>
+      <section id="embed">
+        <h1>Embed</h1>
+        <embed
+          src="/Assets/video/6689304-hd_1920_1080_25fps.mp4"
+          width="500"
+          height="300"
+          type="video/mp4"
+        />
+      </section>
+      <section id="source">
+        <h1>Source</h1>
+        <video controls width="500" height="300">
+          <source src="/Assets/video/Hello.mp4" />
+        </video>
+      </section>
+      <section id="track">
+        <h1>Track</h1>
+        <video controls>
+          <source src="/Assets/video/Hello 2.mp4"/>
+          <track
+            src="/Assets/video/Luck (2022) (Awafim.tv).vtt"
+            default
+            kind="captions"
+            srclang="en"
+            label="English"
+          />
+        </video>
+      </section>
+      <section id="picture">
+        <h1>Picture</h1>
+        <picture>
+          <source
+            media="(min-width: 650px)"
+            srcset="/Assets/Images/Image-1.jpg"
+          />
+          <source
+            media="(min-width: 500px)"
+            srcset="/Assets/Images/Image-2.jpg"
+          />
+          <img src="/Assets/Images/Image-3.jpg" alt="Image-1" />
+        </picture>
+      </section>
+    </main>
+  </body>
+</html>
